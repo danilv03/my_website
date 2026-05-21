@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Academic Website | Academic Record</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Academic Portfolio</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications &amp; Projects</a></li>
+        <li><a class="active" href="academic-record.html">Academic Record</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro section academic-intro">
+      <div class="container narrow">
+        <p class="kicker">Coursework</p>
+        <h1>Academic Record</h1>
+        <p class="lead">A semester-by-semester overview of completed coursework and instructors.</p>
+        <label class="search-label" for="course-search">Filter by course name or instructor</label>
+        <input id="course-search" class="course-search" type="search" placeholder="Start typing to filter courses..." autocomplete="off">
+        <p id="filter-status" class="filter-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section record-section">
+      <div class="container">
+        <div class="year-block">
+          <h2>Year 1 — Fall 2022/2023</h2>
+          <div class="semester-block">
+            <h3>Fall 2022/2023</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0104 100</td><td>Islamic Culture</td><td></td><td>B</td><td></td></tr>
+                  <tr class="course-row"><td>0201 105</td><td>Arabic Lang for Non-Arabic Sp.</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td>0202 112</td><td>English for Academic Purposes</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1430 115</td><td>Physics 1</td><td></td><td>B</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1430 116</td><td>Physics 1 Lab</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1440 133</td><td>Calculus I for Engineering</td><td></td><td>A</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 1 — Spring 2022/2023</h2>
+          <div class="semester-block">
+            <h3>Spring 2022/2023</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td class="green-code">1420 101</td><td>General Chemistry (1)</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1430 117</td><td>Physics 2</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1430 118</td><td>Physics 2 Lab</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1440 161</td><td>Calculus II for Engineers</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1501 100</td><td>Introduction to IT (English)</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 101</td><td>Introduction to Computer Eng.</td><td></td><td>A</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 2 — Fall 2023/2024</h2>
+          <div class="semester-block">
+            <h3>Fall 2023/2024</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0402 202</td><td>Circuit Analysis I</td><td></td><td>B</td><td></td></tr>
+                  <tr class="course-row"><td>0402 203</td><td>Circuit Analysis I Laboratory</td><td></td><td>C+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1440 261</td><td>Diff. Eqs for Engs</td><td></td><td>B</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1501 116</td><td>Programming I</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 111</td><td>Discrete Mathematics for Eng.</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 201</td><td>Digital Logic Design</td><td></td><td>A</td><td>Dr. Khaled Javeed</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 2 — Spring 2023/2024</h2>
+          <div class="semester-block">
+            <h3>Spring 2023/2024</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0302 200</td><td>Fund. of Innovation &amp; Entrep.</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td>0402 241</td><td>Random Signal Theory</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td>0402 250</td><td>Fund. of Elec. Circuits</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1501 211</td><td>Programming II</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 232</td><td>Micro. &amp; Assembly Language</td><td></td><td>B+</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 2 — Summer 2023/2024</h2>
+          <div class="semester-block">
+            <h3>Summer 2023/2024</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0402 251</td><td>Fund. of Elec. Circuits Lab.</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1420 102</td><td>General Chemistry (1) Lab</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 202</td><td>Digital Logic Design Lab.</td><td></td><td>B</td><td>Prof. Ibrahim Kamel</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 3 — Fall 2024/2025</h2>
+          <div class="semester-block">
+            <h3>Fall 2024/2025</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0401 301</td><td>Engineering Economics</td><td></td><td>B</td><td></td></tr>
+                  <tr class="course-row"><td>0402 340</td><td>Eng. Comp. &amp; Linear Algebra</td><td></td><td>A</td><td>Dr. Mahmoud Albreem</td></tr>
+                  <tr class="course-row"><td class="green-code">1501 215</td><td>Data Structures</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 300</td><td>Pro. &amp; Social Issues in Eng.</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 326</td><td>Computer System Arch.</td><td></td><td>B+</td><td>Prof. Oguz Ergin</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 346</td><td>Computer Com. and networks</td><td></td><td>C+</td><td>Dr. Ala Altaweel</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 3 — Spring 2024/2025</h2>
+          <div class="semester-block">
+            <h3>Spring 2024/2025</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0202 207</td><td>Technical Writing</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td>0402 240</td><td>Signals and Systems</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1501 352</td><td>Operating Systems</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1501 366</td><td>Software Engineering</td><td></td><td>A</td><td>Dr. Manar Abu Talib</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 347</td><td>Computer Com. and networks Lab</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 444</td><td>Computer and Network Security</td><td></td><td>A</td><td>Prof. Ibrahim Kamel</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 3 — Summer 2024/2025</h2>
+          <div class="semester-block">
+            <h3>Summer 2024/2025</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td class="green-code">1502 490</td><td>Practical Training Com.Eng.</td><td></td><td>P</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 4 — Fall 2025/2026</h2>
+          <div class="semester-block">
+            <h3>Fall 2025/2026</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0402 346</td><td>Telecommunication Systems 1</td><td></td><td>B+</td><td>Dr. Hayssam Dahrouj</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 334</td><td>Embedded Systems Design</td><td></td><td>B+</td><td>Dr. Talal Boony</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 442</td><td>Network Programming</td><td></td><td>B</td><td>Dr. Ala Altaweel</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 452</td><td>VLSI Design</td><td></td><td>B</td><td>Dr. Basel Soudan</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 491</td><td>Senior Design Project I</td><td></td><td>A</td><td>Supervised by: Oguz Ergin</td></tr>
+                  <tr class="course-row"><td class="green-code">1602 100</td><td>Smart &amp; Effec. Learning Skills</td><td></td><td>B+</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <h2>Year 4 — Spring 2025/2026</h2>
+          <div class="semester-block">
+            <h3>Spring 2025/2026</h3>
+            <div class="table-wrap">
+              <table class="course-table">
+                <thead><tr><th>Course Code</th><th>Course Name</th><th>Short Description</th><th>Grade</th><th>Instructor's Name</th></tr></thead>
+                <tbody>
+                  <tr class="course-row"><td>0204 102</td><td>UAE Society</td><td></td><td>A</td><td></td></tr>
+                  <tr class="course-row"><td>0402 347</td><td>Telecommunication Systems1 Lab</td><td></td><td>A</td><td>Dr. Saeed Abdulla</td></tr>
+                  <tr class="course-row"><td>0402 444</td><td>Digital Signal Processing</td><td></td><td>B</td><td>Prof. Abir Jaffar</td></tr>
+                  <tr class="course-row"><td>1450 100</td><td>Biology and Society</td><td></td><td>B+</td><td></td></tr>
+                  <tr class="course-row"><td class="green-code">1502 420</td><td>Advanced Digital Design</td><td></td><td>A</td><td>Dr. Sohaib Maizoub</td></tr>
+                  <tr class="course-row"><td class="green-code">1502 492</td><td>Senior Design Project II</td><td></td><td>A</td><td>Supervised by: Oguz Ergin</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Personal Academic Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

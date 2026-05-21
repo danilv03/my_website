@@ -1,292 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danil Vyskubov | Quantum & Architecture</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #fdfdfb;
-            --header-bg: #f7f7f2;
-            --accent-teal: #40b3a2;
-            --accent-cyan: #00bcd4;
-            --card-cream: #fff9eb;
-            --text-main: #333;
-            --text-light: #666;
-            --border-color: #e0e0e0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        a { color: var(--accent-teal); text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-
-        /* --- Header Section --- */
-        header {
-            background-color: var(--header-bg);
-            padding: 60px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* The Circuit Trace Background Effect */
-        header::after {
-            content: "";
-            position: absolute;
-            right: -20px;
-            top: 20px;
-            width: 350px;
-            height: 100%;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M0 20h40v40h20V40h40V20h20M120 100h40v-40h20M40 140h40v20h40v-40" fill="none" stroke="%2340b3a2" stroke-width="1" opacity="0.15"/></svg>');
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .profile-container {
-            z-index: 1;
-            text-align: center;
-            max-width: 600px;
-        }
-
-        .profile-frame {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 0 25px rgba(0, 188, 212, 0.15);
-            overflow: hidden;
-            background: #eee;
-            margin: 0 auto 20px;
-        }
-
-        .profile-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        h1 {
-            margin: 10px 0 5px;
-            font-size: 2.2rem;
-            font-weight: 400;
-            letter-spacing: -1px;
-            color: var(--text-main);
-        }
-
-        .social-links {
-            margin-top: 15px;
-            font-size: 0.9rem;
-        }
-
-        .social-links a { margin: 0 10px; }
-
-        /* --- Grid Layout --- */
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .main-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-        }
-
-        .section-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            border: 1px solid transparent;
-            transition: border 0.3s;
-        }
-
-        .section-card:hover { border-color: #f0f0f0; }
-
-        .interest-tag {
-            display: inline-block;
-            background: var(--card-cream);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin: 5px 5px 0 0;
-            color: #b08d4a;
-            border: 1px solid #f0e6d2;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 0;
-            color: var(--accent-teal);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
-
-        /* --- Specific Items Styling --- */
-        .edu-item, .exp-item { margin-bottom: 20px; }
-        .date { font-size: 0.85rem; color: var(--text-light); }
-        .sub-text { font-size: 0.9rem; color: var(--text-light); }
-
-        /* --- The Equation Band --- */
-        .equation-band {
-            grid-column: 1 / -1;
-            background: linear-gradient(135deg, #40b3a2 0%, #00bcd4 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-            border-radius: 12px;
-            margin: 20px 0 40px;
-            font-family: 'Fira Code', monospace;
-            box-shadow: 0 10px 30px rgba(64, 179, 162, 0.2);
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 60px;
-            background: var(--header-bg);
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-
-        .hobby-icon { font-size: 1.2rem; margin-right: 8px; }
-
-        @media (max-width: 768px) {
-            .main-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Academic Website | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="no-scroll-page">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Academic Portfolio</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications &amp; Projects</a></li>
+        <li><a href="academic-record.html">Academic Record</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-    <div class="profile-container">
-        <div class="profile-frame">
-            <img src="https://via.placeholder.com/160" alt="Danil Vyskubov">
-        </div>
-        <h1>Danil Vyskubov</h1>
-        <p style="color: var(--accent-teal); font-weight: 500;">Computer Engineer & Quantum Researcher</p>
-        <div class="social-links">
-            <a href="mailto:danilviskubov03@gmail.com">Email</a> •
-            <a href="https://github.com/danilv03" target="_blank">GitHub</a> •
-            <a href="https://www.youtube.com/@danilv413" target="_blank">YouTube</a>
-        </div>
-    </div>
-</header>
-
-<main>
-    <div class="main-grid">
-        <div class="left-col">
-            <section class="section-card">
-                <h2>Current Research</h2>
-                <p>Focusing on <strong>Cache Masking</strong> and <strong>OS/Hardware Co-Designing for Processing-In-Memory (PIM)</strong>. I aim to bridge the gap between architectural transparency and memory performance in next-gen hardware.</p>
-                <div>
-                    <span class="interest-tag">Computer Architecture</span>
-                    <span class="interest-tag">Quantum Computing</span>
-                    <span class="interest-tag">AI Hardware</span>
-                </div>
-            </section>
-
-            <section class="section-card">
-                <h2>Publication</h2>
-                <div class="exp-item">
-                    <p style="margin: 0;"><strong>Scaling Laws for Hybrid Quantum Neural Networks: Depth, Width, and Quantum-Centric Diagnostics</strong></p>
-                    <p class="sub-text">Vyskubov, D., Vyskubov, K., Innan, N., & Shafique, M. (2026). <br> 
-                    <a href="https://arxiv.org/abs/2604.06007" target="_blank">arXiv:2604.06007</a></p>
-                </div>
-            </section>
-
-            <section class="section-card">
-                <h2>Activities & Projects</h2>
-                <div class="exp-item">
-                    <strong>NYU Abu Dhabi Hackathon (NYUAD)</strong> <span class="date">| 2nd Place</span>
-                    <p class="sub-text">Awarded for Social Good innovation in the 13th annual global hackathon.</p>
-                </div>
-                <div class="exp-item">
-                    <strong>Qiskit Fall Fest 2025</strong> <span class="date">| Organizer</span>
-                    <p class="sub-text">Managed and built the official platform for the University of Sharjah chapter. <br>
-                    <a href="https://qiskit-fallfest.vercel.app/" target="_blank">View Site ↗</a></p>
-                </div>
-                <div class="exp-item">
-                    <strong>Womanium & WISER Global Quantum Program</strong>
-                    <p class="sub-text">Research Project: "Quantum Walks and Monte Carlo" (2025).</p>
-                </div>
-            </section>
-        </div>
-
-        <div class="right-col">
-            <section class="section-card" style="background-color: var(--card-cream);">
-                <h2>Education</h2>
-                <div class="edu-item">
-                    <strong>MS, Computer Engineering</strong>
-                    <div class="date">University of Sharjah | 2026 - Present</div>
-                </div>
-                <div class="edu-item">
-                    <strong>BS, Computer Engineering</strong>
-                    <div class="date">University of Sharjah | 2022 - 2026</div>
-                </div>
-            </section>
-
-            <section class="section-card">
-                <h2>Experience</h2>
-                <div class="exp-item">
-                    <strong>Research Assistant</strong>
-                    <div class="sub-text">Center for Data Analytics & Cybersecurity, UoS</div>
-                </div>
-                <div class="exp-item">
-                    <strong>AI Intern</strong>
-                    <div class="sub-text">SAASST (Sharjah Academy for Astronomy, Space Sciences and Technology)</div>
-                </div>
-            </section>
-
-            <section class="section-card">
-                <h2>Languages</h2>
-                <p class="sub-text">
-                    Russian (Native)<br>
-                    English (Professional)<br>
-                    Spanish (Learning on Duolingo) 🦉
-                </p>
-            </section>
-
-            <section class="section-card">
-                <h2>Hobbies</h2>
-                <div class="sub-text">
-                    <span class="hobby-icon">🎸</span> Bass & Acoustic Guitar<br>
-                    <span class="hobby-icon">🎧</span> Music Production<br>
-                    <span class="hobby-icon">📖</span> Reading
-                </div>
-            </section>
+  <main class="screen-main">
+    <section class="screen-page home-screen">
+      <div class="container home-panel">
+        <div class="home-profile">
+          <div class="portrait-wrap">
+            <!-- REPLACE WITH REAL CONTENT: Replace this placeholder with your actual portrait image in assets/images. -->
+            <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder">YOUR PHOTO HERE</div>
+          </div>
+          <div class="hero-content">
+            <!-- REPLACE WITH REAL CONTENT: Replace this name with your full name. -->
+            <h1>Your Name</h1>
+            <!-- REPLACE WITH REAL CONTENT: Replace this role with your current academic title. -->
+            <p class="subtitle">Computer Engineering Student and Researcher</p>
+            <!-- REPLACE WITH REAL CONTENT: Replace this paragraph with your personal academic statement. -->
+            <p class="lead">I am interested in building thoughtful systems at the intersection of computer architecture, emerging computation, and rigorous engineering practice.</p>
+          </div>
+          <div class="icon-row contact-row" aria-label="Contact links">
+            <a class="icon-link" href="assets/files/cv.pdf" download>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+              </span>
+              <span>Download CV</span>
+            </a>
+            <!-- REPLACE WITH REAL CONTENT: Replace the email address below with your real email. -->
+            <a class="icon-link" href="mailto:your.email@example.com">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              </span>
+              <span>Email</span>
+            </a>
+            <!-- REPLACE WITH REAL CONTENT: Replace this URL with your real LinkedIn profile. -->
+            <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6.5 10v8M6.5 6v.2M11 18v-8m0 3.5c0-2.1 1.3-3.5 3.3-3.5 2.2 0 3.2 1.4 3.2 4v4"/></svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <!-- REPLACE WITH REAL CONTENT: Replace this URL with your real GitHub profile. -->
+            <a class="icon-link" href="https://github.com/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-5.5-2.5M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.4 4.4 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 3.7 5.4 4 5.4 4a4.4 4.4 0 0 0-.1 3.2A4.7 4.7 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+            <!-- REPLACE WITH REAL CONTENT: Replace this URL with your real Google Scholar profile. -->
+            <a class="icon-link" href="https://scholar.google.com/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="M6 11v4c1.6 1.6 3.6 2.4 6 2.4s4.4-.8 6-2.4v-4"/></svg>
+              </span>
+              <span>Google Scholar</span>
+            </a>
+          </div>
         </div>
 
-        <div class="equation-band">
-            <p style="margin-bottom: 20px; opacity: 0.9; font-size: 0.9rem;">From Logic Gates to Wavefunctions:</p>
-            $$i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$
-            <div style="margin-top: 20px; font-size: 1.5rem;">⚛️ 💻 🧪</div>
+        <div class="home-details">
+          <section class="compact-block">
+            <div class="section-heading compact-heading">
+              <p class="kicker">Background</p>
+              <h2>Education</h2>
+            </div>
+            <div class="compact-list">
+              <article>
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <p class="meta">University of Sharjah | 2022-2026 | GPA 3.6</p>
+              </article>
+              <article>
+                <h3>Master of Science in Computer Engineering</h3>
+                <p class="meta">University of Sharjah | Starting Fall 2026</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="compact-block">
+            <div class="section-heading compact-heading">
+              <p class="kicker">Focus Areas</p>
+              <h2>Research Interests</h2>
+            </div>
+            <div class="interest-pills">
+              <span>Computer Architecture</span>
+              <span>Quantum Computing</span>
+              <span>LLM Inference</span>
+            </div>
+          </section>
         </div>
-    </div>
-</main>
+      </div>
+    </section>
+  </main>
 
-<footer>
-    &copy; 2026 Danil Vyskubov | Knowledge is a superpower, simplicity is the language
-</footer>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Personal Academic Website</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

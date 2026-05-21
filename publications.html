@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Academic Website | Publications & Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll-page">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Academic Portfolio</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="publications.html">Publications &amp; Projects</a></li>
+        <li><a href="academic-record.html">Academic Record</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="screen-main">
+    <section class="screen-page publication-screen">
+      <div class="container publication-panel">
+        <div class="page-title-block">
+          <p class="kicker">Research Output</p>
+          <h1>Publications &amp; Projects</h1>
+        </div>
+
+        <div class="publication-layout">
+          <section>
+            <div class="section-heading compact-heading">
+              <p class="kicker">Selected Work</p>
+              <h2>Publications</h2>
+            </div>
+            <article class="publication-card">
+              <h3>Scaling Laws for Hybrid Quantum Neural Networks: Depth, Width, and Quantum-Centric Diagnostics</h3>
+              <p><strong>Authors:</strong> Danil Vyskubov, Kirill Vyskubov, Nouhaila Innan, Muhammad Shafique</p>
+              <p><strong>Venue:</strong> IJCNN 2026</p>
+              <p><strong>Subject:</strong> Quantum Physics (quant-ph)</p>
+              <p><strong>arXiv:</strong> arXiv:2604.06007</p>
+              <p><strong>Submitted:</strong> April 7, 2026</p>
+              <a class="button" href="https://doi.org/10.48550/arXiv.2604.06007" target="_blank" rel="noopener">Read Paper</a>
+            </article>
+          </section>
+
+          <section>
+            <div class="section-heading compact-heading">
+              <p class="kicker">Engineering</p>
+              <h2>Projects</h2>
+            </div>
+            <article class="project-card featured-project">
+              <div class="card-topline">
+                <h3>MIPS Pipeline CPU Design</h3>
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <p>Designed and implemented a pipelined MIPS-style CPU architecture, focusing on datapath organization, control logic, instruction flow, and pipeline behavior across core processor stages.</p>
+              <!-- REPLACE WITH REAL CONTENT: Add a real GitHub URL for this project when available. -->
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Personal Academic Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
