@@ -39,8 +39,9 @@ body.menu-open {
 }
 
 body.no-scroll-page {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-x: hidden;
 }
 
 a {
@@ -195,17 +196,30 @@ main {
 }
 
 .screen-main {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
   padding-top: var(--nav-height);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .screen-page {
-  height: calc(100vh - var(--nav-height));
+  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
   display: grid;
   align-items: center;
   padding: clamp(18px, 3.2vh, 34px) 0;
-  overflow: hidden;
+  overflow: visible;
+}
+
+@supports (height: 100dvh) {
+  body.no-scroll-page,
+  .screen-main {
+    min-height: 100dvh;
+  }
+
+  .screen-page {
+    min-height: calc(100dvh - var(--nav-height));
+  }
 }
 
 .no-scroll-page .site-footer {
@@ -838,9 +852,9 @@ main {
   gap: 22px;
 }
 
-  .hobbies-layout .wide-copy {
-    margin-bottom: 14px;
-  }
+.hobbies-layout .wide-copy {
+  margin-bottom: 14px;
+}
 
 .compact-gallery {
   gap: 14px;
