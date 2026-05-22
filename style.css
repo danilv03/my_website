@@ -381,7 +381,20 @@ main {
   box-shadow: var(--shadow);
 }
 
-.home-screen .portrait-placeholder {
+.portrait-photo {
+  width: min(100%, 330px);
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper-soft);
+  box-shadow: var(--shadow);
+}
+
+.home-screen .portrait-placeholder,
+.home-screen .portrait-photo {
   width: min(100%, 230px);
 }
 
